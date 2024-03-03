@@ -2,7 +2,9 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/profile">profile</router-link>||
+      <router-link to="/Contact">contact</router-link>
     </nav>
     <router-view/>
   </div>
@@ -15,18 +17,30 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  list-style: none;
 }
 
-nav {
-  padding: 30px;
+// nav {
+//   padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
+.loop {
+  background-color: darkcyan;
+  height: 60vh;
+  width: 50%;
+  padding-top: 10px;
+  text-transform: capitalize;
+  
+};
+.li  li{
+    list-style: none;
 }
 </style>
